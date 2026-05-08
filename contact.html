@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact &amp; Join — Team 9960 N.E.R.D.S</title>
+<meta name="description" content="Join Team 9960 N.E.R.D.S, request a demo, or ask about sponsorship. Get in touch with our FTC robotics team in northwest Missouri.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">N.E.R.D.S <span class="num">/ 9960</span></a>
+    <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">Menu</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="seasons.html">Seasons</a></li>
+      <li><a href="outreach.html">Outreach</a></li>
+      <li><a href="sponsors.html">Sponsors</a></li>
+      <li><a href="donate.html">Donate</a></li>
+       class="nav-cta active">Join Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="page-head">
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">Home</a> <span>/</span> <span>Contact</span></div>
+    <h1 class="rise rise-1">Get <em>in touch.</em></h1>
+    <p class="lede rise rise-2" style="margin-top: 2rem;">Whether you want to join the team, request a demo, ask about sponsorship, or just say hi — drop us a line.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="contact-grid">
+
+      <div>
+        <div class="label" style="font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--amber); margin-bottom: var(--s-2);">Reach Us</div>
+        <h2 style="margin-bottom: var(--s-3);">Three <em>ways</em> to talk to us.</h2>
+
+        <div class="info-line">
+          <span>Email</span>
+          <span><a href="mailto:team9960@gmail.com">team9960@gmail.com</a></span>
+        </div>
+        <div class="info-line">
+          <span>Email (Coming Soon)</span>
+          <span style="color: var(--steel);">contact@team9960.org</span>
+        </div>
+        <div class="info-line">
+          <span>Region</span>
+          <span>Northwest Missouri</span>
+        </div>
+        <div class="info-line">
+          <span>FTC Number</span>
+          <span>9960</span>
+        </div>
+        <div class="info-line">
+          <span>Meet Schedule</span>
+          <span>During build season</span>
+        </div>
+        <div class="info-line">
+          <span>Recruiting</span>
+          <span>Reach out anytime</span>
+        </div>
+
+        <p style="margin-top: var(--s-4); color: var(--ink-soft); font-size: 0.92rem;">Email reaches the team's general inbox. We try to respond within a few days.</p>
+
+        <div class="eyebrow" style="margin-top: var(--s-5);">Who Should Apply</div>
+        <ul style="list-style: none; margin-top: var(--s-2); display: flex; flex-direction: column; gap: 0.6rem;">
+          <li>— Middle and high school students in our region</li>
+          <li>— Anyone curious about engineering, coding, or making things</li>
+          <li>— No prior experience required</li>
+          <li>— Commitment: ~6 hours/week during build season</li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="label" style="font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--amber); margin-bottom: var(--s-2);">Send a Message</div>
+        <h2 style="margin-bottom: var(--s-3);">Or fill <em>this out.</em></h2>
+
+        <form action="https://formspree.io/f/mdabwopd" method="POST">
+          <!-- Honeypot anti-spam field — hidden from humans, bots fill it in. Formspree drops anything with _gotcha set. -->
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+          <div class="field">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="reason">Reason for contact</label>
+            <select id="reason" name="reason">
+              <option>I want to join the team</option>
+              <option>Request a demo / outreach event</option>
+              <option>Sponsorship inquiry</option>
+              <option>Donation question</option>
+              <option>General question</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-arrow">Send</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><span class="num">9960</span>N.E.R.D.S</div>
+        <p class="footer-tag">A FIRST Tech Challenge robotics team based in northwest Missouri. Empowering rural students through hands-on engineering since 2015.</p>
+      </div>
+      <div><h5>Team</h5><ul><li><a href="team.html">Members</a></li><li><a href="team.html#mentors">Mentors</a></li><li><a href="outreach.html">Outreach</a></li></ul></div>
+      <div><h5>Engineering</h5><ul><li><a href="seasons.html">All Seasons</a></li><li><a href="seasons/2025-26-decode.html">2025–26 DECODE</a></li><li><a href="seasons.html">Archive</a></li></ul></div>
+      <div><h5>Connect</h5><ul><li><a href="contact.html">Contact</a></li><li><a href="sponsors.html">Sponsors</a></li><li><a href="https://www.firstinspires.org/robotics/ftc" target="_blank" rel="noopener">FIRST Tech Challenge ↗</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Team 9960 N.E.R.D.S</span><span>Northwest Missouri · USA</span></div>
+  </div>
+</footer>
+
+<script src="reveal.js"></script>
+</body>
+</html>

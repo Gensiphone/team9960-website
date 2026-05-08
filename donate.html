@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Donate — Team 9960 N.E.R.D.S</title>
+<meta name="description" content="Make a tax-deductible donation to support Team 9960 N.E.R.D.S, a 501(c)(3) FIRST Tech Challenge robotics team in northwest Missouri.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">N.E.R.D.S <span class="num">/ 9960</span></a>
+    <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">Menu</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="seasons.html">Seasons</a></li>
+      <li><a href="outreach.html">Outreach</a></li>
+      <li><a href="sponsors.html">Sponsors</a></li>
+      <li><a href="donate.html" class="active">Donate</a></li>
+      <li><a href="contact.html" class="nav-cta">Join Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="page-head">
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">Home</a> <span>/</span> <span>Donate</span></div>
+    <h1 class="rise rise-1">Help us <em>build.</em></h1>
+    <p class="lede rise rise-2" style="margin-top: 2rem;">Every dollar lands directly in students' hands — robot parts, registration fees, travel to competitions. We're a registered 501(c)(3); your gift is tax-deductible.</p>
+  </div>
+</section>
+
+<!-- DONATION FORM -->
+<section>
+  <div class="wrap">
+    <div class="contact-grid">
+
+      <!-- LEFT: Why give -->
+      <div>
+        <div class="eyebrow">Why Give</div>
+        <h2 style="margin-top: var(--s-2); margin-bottom: var(--s-3);">A typical season costs us about <em>$8,000.</em></h2>
+        <p style="color: var(--ink-soft);">Robot parts, FIRST registration fees, travel to qualifiers and championship, tools, outreach materials. We raise it from sponsors, fundraisers, and donations from people who believe in rural STEM.</p>
+
+        <div style="margin-top: var(--s-4);">
+          <div class="info-line">
+            <span>Robot parts</span>
+            <span>~ $2,500</span>
+          </div>
+          <div class="info-line">
+            <span>Registration &amp; events</span>
+            <span>~ $1,500</span>
+          </div>
+          <div class="info-line">
+            <span>Travel &amp; lodging</span>
+            <span>~ $2,500</span>
+          </div>
+          <div class="info-line">
+            <span>Tools &amp; equipment</span>
+            <span>~ $1,000</span>
+          </div>
+          <div class="info-line">
+            <span>Outreach materials</span>
+            <span>~ $500</span>
+          </div>
+        </div>
+
+        <div class="eyebrow" style="margin-top: var(--s-5);">Tax Information</div>
+        <p style="margin-top: var(--s-2); color: var(--ink-soft); font-size: 0.95rem;">Team 9960 N.E.R.D.S is a 501(c)(3) nonprofit. Donations are tax-deductible to the extent allowed by law. PayPal will email you a receipt. For acknowledgment letters or W-9s, <a href="contact.html">get in touch</a>.</p>
+
+        <p style="margin-top: var(--s-3); color: var(--ink-soft); font-size: 0.95rem;">EIN: <span class="mono" style="font-size: 0.85rem;">[Your team's EIN]</span></p>
+      </div>
+
+      <!-- RIGHT: Donate form -->
+      <div>
+        <div style="background: var(--bone-warm); padding: var(--s-4); border: 1px solid var(--line-strong); position: relative;">
+          <div class="eyebrow" style="margin-bottom: var(--s-2);">Make a Gift</div>
+          <h3 style="font-style: italic; font-weight: 400; margin-bottom: var(--s-3);">Donate via <em>PayPal.</em></h3>
+
+          <p style="font-size: 0.95rem; color: var(--ink-soft); margin-bottom: var(--s-3);">Secure checkout. PayPal balance, credit card, or bank transfer all accepted. One-time or recurring.</p>
+
+          <!-- ============================================
+               PAYPAL DONATE BUTTON
+               ============================================
+               REPLACE THE PLACEHOLDER BELOW WITH YOUR REAL PAYPAL BUTTON CODE.
+
+               To get the button code:
+               1. Log into your PayPal Business account (the one tied to your 501(c)(3))
+               2. Go to Tools → PayPal Buttons → Donations
+               3. Configure: org name, default amount (or "let donor choose"), thank-you page URL (you can use https://team9960.org/donate.html#thanks)
+               4. Click "Create Button"
+               5. PayPal shows you HTML code. Copy the entire <form>...</form> block.
+               6. Paste it BELOW, replacing the placeholder div. That's it.
+
+               Alternative — modern PayPal SDK button:
+               If PayPal gives you the new "Donate SDK" version (a <div id="donate-button"> + <script>),
+               that works too — paste the entire snippet in place of the placeholder.
+               ============================================ -->
+
+          <div id="paypal-donate-placeholder" style="background: var(--bone); border: 1px dashed var(--steel-light); padding: var(--s-4); text-align: center; border-radius: 4px;">
+            <p class="mono" style="color: var(--steel); margin-bottom: var(--s-2);">PayPal Donate Button</p>
+            <p style="font-family: var(--display); font-style: italic; color: var(--ink-soft); font-size: 1.1rem; margin-bottom: var(--s-2);">Replace this placeholder with your PayPal button code.</p>
+            <p style="font-size: 0.85rem; color: var(--steel); line-height: 1.5;">See instructions in <code style="font-family: var(--mono); background: var(--bone-warm); padding: 0.1rem 0.4rem;">donate.html</code> source comments, or in <code style="font-family: var(--mono); background: var(--bone-warm); padding: 0.1rem 0.4rem;">README.md</code>.</p>
+
+            <!-- For preview / before-deployment, this temporary link goes to PayPal's general donation search.
+                 Remove it once your real button is in place. -->
+            <a href="https://www.paypal.com/us/fundraiser/charity/find" target="_blank" rel="noopener" class="btn btn-primary btn-arrow" style="margin-top: var(--s-3); padding: 0.8rem 1.4rem; font-size: 0.9rem;">Donate via PayPal (placeholder)</a>
+          </div>
+
+          <p style="font-size: 0.8rem; color: var(--steel); margin-top: var(--s-3); line-height: 1.5;">PayPal handles all payment processing securely. Team 9960 never sees your card or bank details.</p>
+        </div>
+
+        <!-- Other ways to give -->
+        <div style="margin-top: var(--s-4);">
+          <div class="eyebrow">Other Ways to Give</div>
+          <ul style="list-style: none; margin-top: var(--s-2); display: flex; flex-direction: column; gap: 0.6rem;">
+            <li>— <strong>Check:</strong> Made out to "Team 9960 N.E.R.D.S" — contact us for the mailing address.</li>
+            <li>— <strong>In-kind:</strong> Materials, tools, mentor time. See <a href="sponsors.html">Sponsors</a>.</li>
+            <li>— <strong>Sponsorship:</strong> Larger gifts get logo placement. See <a href="sponsors.html">tiers</a>.</li>
+            <li>— <strong>Employer match:</strong> Many employers match charitable gifts. Ask your HR.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section style="background: var(--bone-warm);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="label"><span class="ix">01 /</span> What Donations Buy</div>
+      <h2><em>Concretely.</em></h2>
+    </div>
+    <div class="activities reveal">
+      <div class="activity">
+        <div class="num">$ 25</div>
+        <h3>A bag of fasteners</h3>
+        <p>The unsung hero of every robot. Allen bolts, lock nuts, threadlocker. We go through hundreds in a season.</p>
+      </div>
+      <div class="activity">
+        <div class="num">$ 75</div>
+        <h3>3D printer filament</h3>
+        <p>Enough PETG and PLA to print custom brackets, mounts, and prototypes for a month of build season.</p>
+      </div>
+      <div class="activity">
+        <div class="num">$ 150</div>
+        <h3>A motor or servo</h3>
+        <p>FTC-legal motors run $80–$120; high-torque servos around $50. Robots eat motors during driver practice.</p>
+      </div>
+      <div class="activity">
+        <div class="num">$ 300</div>
+        <h3>Event registration</h3>
+        <p>Covers a regional qualifier or league meet for the team. Includes pit space and judging session.</p>
+      </div>
+      <div class="activity">
+        <div class="num">$ 500</div>
+        <h3>A weekend at championship</h3>
+        <p>Hotel rooms and meals for the team during a regional championship competition.</p>
+      </div>
+      <div class="activity">
+        <div class="num">$ 1,000</div>
+        <h3>An outreach season</h3>
+        <p>School visits, library demos, community events, and FLL mentorship — for an entire calendar year.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THANK YOU ANCHOR -->
+<section id="thanks" style="background: var(--ink); color: var(--bone); padding: var(--s-7) 0; position: relative; border-top: 4px solid var(--amber);">
+  <div class="wrap">
+    <div style="max-width: 36rem;">
+      <div class="eyebrow" style="color: var(--amber-bright);">Thank You</div>
+      <h2 style="color: var(--bone); margin-top: var(--s-2);">From a <em>workshop</em> in northwest Missouri.</h2>
+      <p style="color: var(--bone-warm); font-family: var(--display); font-style: italic; font-weight: 300; font-size: 1.4rem; line-height: 1.4; margin-top: var(--s-3);">If you've donated — past, present, or future — thank you. You're paying for the parts, the trips, the late nights, and the moment a student says "wait, I can <em>actually</em> build this."</p>
+      <p style="color: var(--bone-warm); margin-top: var(--s-3);">If you have questions about a donation, want to make a gift another way, or need an acknowledgment letter, <a href="contact.html" style="color: var(--amber-bright);">get in touch</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><span class="num">9960</span>N.E.R.D.S</div>
+        <p class="footer-tag">A FIRST Tech Challenge robotics team based in northwest Missouri. Empowering rural students through hands-on engineering since 2015.</p>
+      </div>
+      <div><h5>Team</h5><ul><li><a href="team.html">Members</a></li><li><a href="team.html#mentors">Mentors</a></li><li><a href="outreach.html">Outreach</a></li></ul></div>
+      <div><h5>Engineering</h5><ul><li><a href="seasons.html">All Seasons</a></li><li><a href="seasons/2025-26-decode.html">2025–26 DECODE</a></li><li><a href="seasons.html">Archive</a></li></ul></div>
+      <div><h5>Connect</h5><ul><li><a href="contact.html">Contact</a></li><li><a href="sponsors.html">Sponsors</a></li><li><a href="donate.html">Donate</a></li><li><a href="https://www.firstinspires.org/robotics/ftc" target="_blank" rel="noopener">FIRST Tech Challenge ↗</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Team 9960 N.E.R.D.S</span><span>Northwest Missouri · USA</span></div>
+  </div>
+</footer>
+
+<script src="reveal.js"></script>
+</body>
+</html>
