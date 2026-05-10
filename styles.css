@@ -362,7 +362,7 @@ section { padding: var(--s-7) 0; position: relative; }
 }
 @media (max-width: 760px) {
   .photo-strip { grid-template-columns: 1fr 1fr; }
-  .photo-strip > div:nth-child(3) { grid-column: 1 / -1; aspect-ratio: 16/9 !important; }
+  .photo-strip > div:nth-child(3) { grid-column: 1 / -1; aspect-ratio: 4/3 !important; }
 }
 .ps-tall { aspect-ratio: 4/5; }
 .ps-wide { aspect-ratio: 4/3; }
