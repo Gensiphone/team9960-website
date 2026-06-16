@@ -182,32 +182,36 @@ If you ever need to change which Formspree form the page uses (for example, afte
 
 ## The donate page (PayPal setup)
 
-The donation page (`donate.html`) is built and styled, but the actual PayPal button is a placeholder. Replacing the placeholder with your real PayPal button takes about 10 minutes once your PayPal Giving Fund verification is done.
+The donation page (`donate.html`) has a **live** PayPal donate button — a hosted button tied to the team's PayPal Business account. The two things below are separate: (A) the button itself, which is done, and (B) the discounted charity rate, which is its own application.
 
-### One-time setup (do once)
+### A. The donate button (done — here's how to change it)
 
-1. **Confirm 501(c)(3) verification with PayPal.** Go to [paypal.com/us/fundraiser/charity/find](https://www.paypal.com/us/fundraiser/charity/find) and search for Team 9960. If you're listed, you're in. If not, enroll your PayPal Business account in **PayPal Giving Fund**. PayPal verifies your nonprofit through the IRS and Candid (formerly GuideStar) databases. Verification can take a few business days. Once verified, PayPal waives most of the transaction fee for donations.
+The button is a hosted PayPal button. Its `hosted_button_id` lives in the `<form>` inside the "Make a Gift" card in `donate.html`. To regenerate or replace it:
 
-2. **Generate a Donate button.**
-   - Log into your PayPal Business account (the one tied to your 501(c)(3))
-   - Go to **Tools → All Tools → PayPal Buttons**
-   - Click **Donations**
-   - Configure:
-     - Organization name: Team 9960 N.E.R.D.S
-     - Default amount: leave blank to let donors choose, or set a suggested amount
-     - Currency: USD
-     - Thank-you page URL: `https://team9960.org/donate.html#thanks` (the page already has a thank-you anchor at the bottom)
-   - Click **Create Button**
-   - PayPal shows you the HTML — **copy the entire `<form>...</form>` block** (or the modern SDK snippet, if PayPal gives you that)
+1. Log into the team's PayPal **Business** account.
+2. Go to **paypal.com/buttons** and create or edit a **Donate** button.
+   - Organization name: Team 9960 N.E.R.D.S
+   - Amount: leave blank to let donors choose, or set suggested amounts
+   - Currency: USD
+   - Thank-you page URL: `https://team9960.org/donate.html#thanks`
+3. Copy the new `hosted_button_id` PayPal gives you and swap it into the `value="..."` in the form in `donate.html`. Keep the surrounding markup so the button stays styled to the site (it uses a `<button class="btn btn-primary btn-arrow">` rather than PayPal's default yellow image).
+4. Commit, push.
 
-3. **Paste it into `donate.html`.**
-   - Open `donate.html`
-   - Find the `<div id="paypal-donate-placeholder">` block (it's in a clearly marked section with HTML comments)
-   - Replace the entire div with the code PayPal gave you
-   - Commit, push
+**Testing tip:** PayPal won't let you donate to yourself, so testing while logged into the team account will fail with "you cannot donate to yourself." Test from a private browser window paying as a guest with a card, or have someone else give a small amount — then refund it from the PayPal dashboard.
 
-The button will then render and accept donations live.
+### B. The discounted charity rate (separate — apply once)
 
+Confirmed-charity status drops the fee from **2.89% + $0.49** to **1.99% + $0.49** per donation. Selecting "Nonprofit Organization" and entering the EIN at signup does **not** grant it — it's a separate document review, and the discount doesn't apply until PayPal emails confirmation.
+
+1. Go to **paypal.com/charities** and start the confirmed-charity flow.
+2. Submit the required documents: IRS **501(c)(3) determination letter**, EIN, bank account info, proof of identity for the account holder, proof of registration on charity letterhead, and a signed letter of authorization (template provided in the flow).
+3. Wait for the confirmation email (typically a few business days). The discounted rate applies only after that email arrives.
+
+### Optional later additions
+
+- **Update the EIN.** In `donate.html`, replace `[Your team's EIN]` with the team's actual federal EIN.
+- **Recurring donations:** PayPal's button tools can add a subscription/recurring option alongside the one-time button.
+- **Custom thank-you message:** Update the `<section id="thanks">` block at the bottom of `donate.html`.
 ### Optional later additions
 
 - **Update the EIN.** In `donate.html`, replace `[Your team's EIN]` with the team's actual federal EIN.
