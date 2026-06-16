@@ -81,22 +81,24 @@
 
           <p style="font-size: 0.95rem; color: var(--ink-soft); margin-bottom: var(--s-3);">Secure checkout. PayPal balance, credit card, or bank transfer all accepted. One-time or recurring.</p>
 
-          <!-- ============================================
-               PAYPAL DONATE BUTTON
+         <!-- ============================================
+               PAYPAL DONATE BUTTON (live)
                ============================================
-               REPLACE THE PLACEHOLDER BELOW WITH YOUR REAL PAYPAL BUTTON CODE.
+               Hosted PayPal donate button tied to the team's PayPal
+               Business account via the hosted_button_id in the form below.
 
-               To get the button code:
-               1. Log into your PayPal Business account (the one tied to your 501(c)(3))
-               2. Go to Tools → PayPal Buttons → Donations
-               3. Configure: org name, default amount (or "let donor choose"), thank-you page URL (you can use https://team9960.org/donate.html#thanks)
-               4. Click "Create Button"
-               5. PayPal shows you HTML code. Copy the entire <form>...</form> block.
-               6. Paste it BELOW, replacing the placeholder div. That's it.
+               To regenerate or change it (new suggested amounts, new
+               account, etc.):
+               1. Log into the team's PayPal Business account
+               2. Go to paypal.com/buttons and create/edit a Donate button
+               3. Copy the new hosted_button_id and swap it into the
+                  value="" in the form below — keep the surrounding markup
+                  so the button stays styled to match the site
 
-               Alternative — modern PayPal SDK button:
-               If PayPal gives you the new "Donate SDK" version (a <div id="donate-button"> + <script>),
-               that works too — paste the entire snippet in place of the placeholder.
+               NOTE: The discounted charity processing rate (1.99% + $0.49
+               vs the standard 2.89% + $0.49) is a SEPARATE step and does
+               not happen automatically. See "The donate page (PayPal
+               setup)" in README.md.
                ============================================ -->
 
           <form action="https://www.paypal.com/donate" method="post" target="_top">
