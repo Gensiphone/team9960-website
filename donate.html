@@ -99,15 +99,11 @@
                that works too — paste the entire snippet in place of the placeholder.
                ============================================ -->
 
-          <div id="paypal-donate-placeholder" style="background: var(--bone); border: 1px dashed var(--steel-light); padding: var(--s-4); text-align: center; border-radius: 4px;">
-            <p class="mono" style="color: var(--steel); margin-bottom: var(--s-2);">PayPal Donate Button</p>
-            <p style="font-family: var(--display); font-style: italic; color: var(--ink-soft); font-size: 1.1rem; margin-bottom: var(--s-2);">Replace this placeholder with your PayPal button code.</p>
-            <p style="font-size: 0.85rem; color: var(--steel); line-height: 1.5;">See instructions in <code style="font-family: var(--mono); background: var(--bone-warm); padding: 0.1rem 0.4rem;">donate.html</code> source comments, or in <code style="font-family: var(--mono); background: var(--bone-warm); padding: 0.1rem 0.4rem;">README.md</code>.</p>
-
-            <!-- For preview / before-deployment, this temporary link goes to PayPal's general donation search.
-                 Remove it once your real button is in place. -->
-            <a href="https://www.paypal.com/us/fundraiser/charity/find" target="_blank" rel="noopener" class="btn btn-primary btn-arrow" style="margin-top: var(--s-3); padding: 0.8rem 1.4rem; font-size: 0.9rem;">Donate via PayPal (placeholder)</a>
-          </div>
+          <form action="https://www.paypal.com/donate" method="post" target="_top">
+            <input type="hidden" name="hosted_button_id" value="6JAYVBU36B3ZL" />
+            <button type="submit" class="btn btn-primary btn-arrow" style="margin-top: var(--s-3); padding: 0.8rem 1.4rem; font-size: 0.9rem;">Donate via PayPal</button>
+            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+          </form>
 
           <p style="font-size: 0.8rem; color: var(--steel); margin-top: var(--s-3); line-height: 1.5;">PayPal handles all payment processing securely. Team 9960 never sees your card or bank details.</p>
         </div>
