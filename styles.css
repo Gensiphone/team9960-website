@@ -452,7 +452,7 @@ section { padding: var(--s-7) 0; position: relative; }
   .process-step { grid-template-columns: 60px 1fr; gap: var(--s-3); }
   .process-step .step-desc { grid-column: 1 / -1; padding-left: calc(60px + var(--s-3)); }
 }
-.step-num { font-family: var(--mono); font-size: 0.85rem; color: var(--amber); font-weight: 600; padding-top: 0.3rem; }
+.step-num { font-family: var(--mono); font-size: 1.3rem; color: var(--amber); font-weight: 600; padding-top: 0.3rem; }
 .step-title { font-family: var(--display); font-size: 1.6rem; font-weight: 400; font-style: italic; }
 .step-desc { color: var(--ink-soft); font-size: 0.98rem; }
 
