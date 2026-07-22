@@ -371,7 +371,7 @@ section { padding: var(--s-7) 0; position: relative; }
 /* PRINCIPLES */
 .principles {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 0;
   border-top: 1px solid var(--line-strong);
 }
