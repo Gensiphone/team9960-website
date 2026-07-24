@@ -636,6 +636,8 @@ section { padding: var(--s-7) 0; position: relative; }
 /* PROSE */
 .prose { display: grid; grid-template-columns: 1fr 2.5fr; gap: var(--s-5); }
 @media (max-width: 800px) { .prose { grid-template-columns: 1fr; gap: var(--s-3); } }
+.prose-right { display: grid; grid-template-columns: 2.5fr 1fr; gap: var(--s-5); }
+@media (max-width: 800px) { .prose { grid-template-columns: 1fr; gap: var(--s-3); } }
 .prose-side .label {
   font-family: var(--mono);
   font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase;
