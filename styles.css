@@ -262,7 +262,7 @@ section { padding: var(--s-7) 0; position: relative; }
 .btn-primary:hover { background: var(--amber); color: var(--ink); transform: translateY(-2px); }
 .btn-ghost { background: transparent; color: var(--ink); border: 1px solid var(--ink); }
 .btn-ghost:hover { background: var(--ink); color: var(--bone); }
-.btn-arrow::after { content: '→'; transition: transform 0.25s; font-family: var(--mono); }
+.btn-arrow::after { content: '→'; transition: transform 0.25s; font-family: var(--mono); font-size: 2em; }
 .btn-arrow:hover::after { transform: translateX(4px); }
 
 /* STATS */
