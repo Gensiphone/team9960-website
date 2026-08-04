@@ -312,6 +312,33 @@ section { padding: var(--s-7) 0; position: relative; }
   display: flex; align-items: baseline; gap: 0.5rem;
 }
 .section-head .label .ix { color: var(--steel-light); }
+/* VIDEO EMBED */
+.video-head { text-align: center; max-width: 640px; margin: 0 auto; }
+.video-embed {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--s-5);
+  align-items: center;
+}
+@media (max-width: 800px) { .video-embed { grid-template-columns: 1fr; gap: var(--s-4); } }
+.video-embed iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  background: var(--ink-soft);
+  display: block;
+}
+<!-- GAME REVEAL VIDEO -->
+<section>
+  <div class="wrap">
+    <div class="video-head reveal">
+      <h2>The <em>DECODE</em> kickoff animation.</h2>
+    </div>
+    <div class="video-embed reveal">
+
+Why: .section-head is a shared two-column class (label + heading) used by four other sections on this page — reusing it here for a lone h2 is why the title wasn't centering. .video-head is scoped just to this block. .video-embed becomes a real two-column grid (video / prose), collapsing to one column under 800px like the rest of the site's responsive patterns, and the iframe now scales to a proper 16:9 instead of its ~300×150 default.
+
+Once you're happy with it, commit both files and re-sync the project knowledge so I stay current.
 
 /* PHOTO SLOT SYSTEM */
 .photo-slot {
