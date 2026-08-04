@@ -313,7 +313,7 @@ section { padding: var(--s-7) 0; position: relative; }
 }
 .section-head .label .ix { color: var(--steel-light); }
 /* VIDEO EMBED */
-.video-head { text-align: center; max-width: 640px; margin: 0 auto; }
+.video-head { text-align: center; max-width: 640px; margin: 0 auto var(--s-5); }
 .video-embed {
   display: grid;
   grid-template-columns: 1fr 1fr;
