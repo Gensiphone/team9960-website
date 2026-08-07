@@ -312,6 +312,7 @@ section { padding: var(--s-7) 0; position: relative; }
   display: flex; align-items: baseline; gap: 0.5rem;
 }
 .section-head .label .ix { color: var(--steel-light); }
+
 /* VIDEO EMBED */
 .video-head { text-align: center; margin: 0 auto var(--s-5); }
 .video-embed {
@@ -329,6 +330,9 @@ section { padding: var(--s-7) 0; position: relative; }
   background: var(--ink-soft);
   display: block;
 }
+
+/* SEASON ROBOT */
+.robot-head { text-align: center; margin: 0 auto var(--s-5); }
 
 /* PHOTO SLOT SYSTEM */
 .photo-slot {
