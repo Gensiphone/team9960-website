@@ -579,8 +579,8 @@ section { padding: var(--s-7) 0; position: relative; }
 /* HOVER GALLERY */
 .hover-gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--s-3);
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--s-2);
 }
 @media (max-width: 760px) { .hover-gallery { grid-template-columns: repeat(2, 1fr); } }
 
@@ -613,7 +613,6 @@ section { padding: var(--s-7) 0; position: relative; }
 }
 .hover-item:hover,
 .hover-item.active {
-  transform: scale(1.6);
   box-shadow: 0 16px 40px rgba(11, 23, 41, 0.4);
   z-index: 10;
 }
@@ -621,6 +620,26 @@ section { padding: var(--s-7) 0; position: relative; }
 .hover-item.active .hover-caption {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Desktop: small thumbnails (6-col grid above), big expansion */
+@media (min-width: 761px) {
+  .hover-item:hover,
+  .hover-item.active {
+    transform: scale(3);
+  }
+  .hover-item:nth-child(6n+1) { transform-origin: left center; }
+  .hover-item:nth-child(6n) { transform-origin: right center; }
+}
+
+/* Mobile: same expand size as before, but grow inward from screen edges */
+@media (max-width: 760px) {
+  .hover-item:hover,
+  .hover-item.active {
+    transform: scale(1.6);
+  }
+  .hover-item:nth-child(2n+1) { transform-origin: left center; }
+  .hover-item:nth-child(2n) { transform-origin: right center; }
 }
 
 /* CTA */
