@@ -605,7 +605,7 @@ section { padding: var(--s-7) 0; position: relative; }
   color: var(--bone);
   border-top: calc(2px / var(--gallery-scale)) solid var(--amber);
   font-family: var(--mono);
-  font-size: calc(0.72rem / var(--gallery-scale));
+  font-size: calc(0.8rem / var(--gallery-scale));
   letter-spacing: 0.05em;
   padding: calc(0.6rem / var(--gallery-scale)) calc(0.8rem / var(--gallery-scale));
   opacity: 0;
