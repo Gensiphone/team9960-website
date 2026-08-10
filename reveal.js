@@ -15,3 +15,14 @@
 
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 })();
+
+// Photo gallery: tap-to-toggle for touch devices (desktop keeps :hover)
+(function () {
+  document.addEventListener('click', (e) => {
+    const item = e.target.closest('.hover-item');
+    document.querySelectorAll('.hover-item.active').forEach(el => {
+      if (el !== item) el.classList.remove('active');
+    });
+    if (item) item.classList.toggle('active');
+  });
+})();
