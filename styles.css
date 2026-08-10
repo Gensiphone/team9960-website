@@ -299,18 +299,15 @@ section { padding: var(--s-7) 0; position: relative; }
 
 /* SECTION HEAD */
 .section-head {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: var(--s-5);
-  margin-bottom: var(--s-5);
-  align-items: end;
+  text-align: center;
+  margin: 0 auto var(--s-5);
 }
-@media (max-width: 760px) { .section-head { grid-template-columns: 1fr; gap: var(--s-3); } }
 .section-head .label {
   font-family: var(--mono);
   font-size: 0.78rem; letter-spacing: 0.15em;
   text-transform: uppercase; color: var(--amber);
-  display: flex; align-items: baseline; gap: 0.5rem;
+  display: flex; align-items: baseline; justify-content: center; gap: 0.5rem;
+  margin-bottom: var(--s-2);
 }
 .section-head .label .ix { color: var(--steel-light); }
 
