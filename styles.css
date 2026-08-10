@@ -312,7 +312,6 @@ section { padding: var(--s-7) 0; position: relative; }
 .section-head .label .ix { color: var(--steel-light); }
 
 /* VIDEO EMBED */
-.video-head { text-align: center; margin: 0 auto var(--s-5); }
 .video-embed {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -328,9 +327,6 @@ section { padding: var(--s-7) 0; position: relative; }
   background: var(--ink-soft);
   display: block;
 }
-
-/* SEASON ROBOT */
-.robot-head { text-align: center; margin: 0 auto var(--s-5); }
 
 /* PHOTO SLOT SYSTEM */
 .photo-slot {
@@ -589,11 +585,16 @@ section { padding: var(--s-7) 0; position: relative; }
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.hover-item img {
+.hover-item img,
+.hover-item .photo-slot {
   width: 100%; height: 100%;
   object-fit: cover;
   display: block;
   filter: contrast(1.05) saturate(0.95);
+}
+.hover-item .photo-slot {
+  position: absolute;
+  inset: 0;
 }
 .hover-item .hover-caption {
   position: absolute;
@@ -602,7 +603,7 @@ section { padding: var(--s-7) 0; position: relative; }
   color: var(--bone);
   border-top: calc(2px / var(--gallery-scale)) solid var(--amber);
   font-family: var(--mono);
-  font-size: calc(0.85rem / var(--gallery-scale));
+  font-size: calc(0.8rem / var(--gallery-scale));
   letter-spacing: 0.05em;
   padding: calc(0.6rem / var(--gallery-scale)) calc(0.8rem / var(--gallery-scale));
   opacity: 0;
