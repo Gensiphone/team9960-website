@@ -349,7 +349,7 @@ section { padding: var(--s-7) 0; position: relative; }
   display: flex; align-items: center; justify-content: center;
 }
 .photo-slot img {
-  width: 100%; height: 100%; object-fit: cover;
+  width: 100%; height: 100%; object-fit: contain;
   display: block;
   position: absolute; inset: 0;
   filter: contrast(1.05) saturate(0.95);
