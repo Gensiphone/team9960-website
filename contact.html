@@ -40,21 +40,23 @@
       <div>
         <div class="label" style="font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--amber); margin-bottom: var(--s-2);">Reach Us</div>
         <h2 style="margin-bottom: var(--s-3);">Three <em>ways</em> to talk to us.</h2>
-
+        
+        <div class="info-line">
+          <span>Email to Royce Cozine</span>
+          <span><a href="mailto:royce.cozine@gmail.com">royce.cozine@gmail.com</a></span>
+        </div>
+        
         <div class="info-line">
           <span>Email to Gerald Nelson</span>
           <span><a href="mailto:team9960@gmail.com">team9960@gmail.com</a></span>
         </div>
-        <div class="info-line">
-          <span>Email to Royce Cozine</span>
-          <span><a href="mailto:rcozine@jc123.k12.mo.us">rcozine@jc123.k12.mo.us</a></span>
-        </div>
+
         <div class="info-line">
           <span>Region</span>
           <span>Northwest Missouri</span>
         </div>
         <div class="info-line">
-          <span>FTC Number</span>
+          <span>FTC Team Number</span>
           <span>9960</span>
         </div>
         <div class="info-line">
@@ -87,11 +89,20 @@
 
           <div class="field">
             <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="student" name="student" required>
           </div>
           <div class="field">
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="field">
+            <label for="name">If you are a student, enter your parent or guardian's name</label>
+            <input type="text" id="parent" name="parent">
+          </div>
+          <div class="field">
+            <label for="email">Parent or Guardian Email</label>
+            <input type="email" id="parentemail" name="parentemail" required>
           </div>
           <div class="field">
             <label for="reason">Reason for contact</label>
@@ -100,12 +111,12 @@
               <option>Request a demo / outreach event</option>
               <option>Sponsorship inquiry</option>
               <option>Donation question</option>
-              <option>General question</option>
+              <option>General question/Other</option>
             </select>
           </div>
           <div class="field">
             <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
+            <textarea id="message" name="message"></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-arrow">Send</button>
         </form>
