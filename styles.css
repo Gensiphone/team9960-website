@@ -872,7 +872,7 @@ section { padding: var(--s-7) 0; position: relative; }
 }
 .field input, .field textarea, .field select {
   font-family: var(--body); font-size: 1rem;
-  padding: 0.8rem 1rem;
+  padding: 0.3rem 1rem;
   border: 1px solid var(--line-strong);
   background: var(--bone);
   border-radius: 2px; color: var(--ink);
