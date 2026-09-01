@@ -882,7 +882,7 @@ section { padding: var(--s-7) 0; position: relative; }
 .field textarea { min-height: 140px; resize: vertical; }
 .info-line {
   display: flex; justify-content: space-between;
-  padding: 0.8rem 0;
+  padding: 0.3rem 0;
   border-bottom: 1px solid var(--line);
   font-size: 0.95rem;
 }
