@@ -744,6 +744,19 @@ section { padding: var(--s-7) 0; position: relative; }
 }
 .prose-body h3 { margin-top: var(--s-4); margin-bottom: var(--s-2); font-style: italic; font-weight: 400; }
 
+/* BLOCKQUOTE */
+blockquote {
+  margin: var(--s-3) 0;
+  padding: var(--s-2) var(--s-4);
+  border-left: 3px solid var(--amber);
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  max-width: 65ch;
+}
+
 /* ROSTER */
 .roster {
   display: grid;
